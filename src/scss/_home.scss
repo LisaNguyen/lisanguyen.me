@@ -35,6 +35,7 @@
         justify-content: space-between;
         width: 33%;
         margin: 1.25em 0;
+        margin-top: 1.5em;
     }
 }
 
@@ -65,7 +66,6 @@
         &__icons {
             justify-content: center;
             width: 100%;
-            margin: 1.25em 0;
         }
 
         &__icon:not(:last-child) {

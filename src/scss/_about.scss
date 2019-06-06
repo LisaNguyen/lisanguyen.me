@@ -19,7 +19,7 @@
         text-align: center;
         transform: scaleY(1.5);
         font-weight: 700;
-        margin-bottom: 0.25em;
+        margin-bottom: 0.5em;
       }
 
       &--container {
@@ -30,7 +30,6 @@
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-        background-color: rgba(255, 255, 255, 0.8);
         padding: 4em;
       }
 

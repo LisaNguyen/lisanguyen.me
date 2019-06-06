@@ -13,13 +13,13 @@ const Home = () => (
             Nice of you to drop by, yes you right there. Welcome to my digital home on the web where you can read about who I am and what I do for a living or take a peek at the side projects I'm currently working on. If you'd like to connect, you can catch me on Twitter, LinkedIn or GitHub.
           </p>
           <div className="home__icons">
-            <a className="home__icon" href="https://twitter.com/LisaNguyen505">
+            <a className="home__icon" href="https://twitter.com/LisaNguyen505" target="_blank">
               <FontAwesomeIcon icon={["fab", "twitter"]} size="3x"/>
             </a>
-            <a className="home__icon" href="https://ie.linkedin.com/in/lisa-nguyen-514725a5">
+            <a className="home__icon" href="https://ie.linkedin.com/in/lisa-nguyen-514725a5" target="_blank">
               <FontAwesomeIcon icon={["fab", "linkedin"]} size="3x" />
             </a>
-            <a className="home__icon" href="https://github.com/LisaNguyen">
+            <a className="home__icon" href="https://github.com/LisaNguyen" target="_blank">
               <FontAwesomeIcon icon={["fab", "github"]} size="3x" />
             </a>
           </div>
