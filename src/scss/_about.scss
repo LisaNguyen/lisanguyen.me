@@ -1,0 +1,116 @@
+.about {
+    position: relative;
+    height: 100%;
+    width: 85%;
+    margin: 0 auto;
+    padding: 2em;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;    
+
+    &__content {
+      font-family: 'Merriweather', serif;
+      line-height: 1.75em;
+      font-size: 1.5em;
+
+      &--header {
+        font-size: 2em;
+        text-transform: capitalize;
+        text-align: center;
+        transform: scaleY(1.5);
+        font-weight: 700;
+        margin-bottom: 0.25em;
+      }
+
+      &--container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 4em;
+      }
+
+      &--paragraph {
+        text-align: justify;
+        width: 80%;
+        margin: 1em auto;
+        font-size: 1em;
+        line-height: 1.5em;
+      }
+    }
+
+  &__links {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 2em auto;
+    margin: 1.5em auto;
+    letter-spacing: 0.03em;
+
+    i {
+      margin-right: .5em;
+    }
+
+    a {
+      text-decoration: none;
+      color: #162434;
+    }
+  }
+
+  &__image  {
+    position: relative;
+      
+    img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+@media (max-width: 1280px) {
+    .personal {
+        &__about {
+            &--header {
+                font-size: 4.5em;
+            }
+            
+            &--paragraph {
+                width: 100%;
+                font-size: 1.1em;
+            }
+        }
+        
+        &__links {
+            width: 100%;
+            margin: 0;
+        }
+    }
+}
+
+@media (max-width: 975px) {
+  .personal {
+        display: block;
+        &__image {
+            display: none;
+        }
+
+        // &__about  {
+        //     display: flex;
+        //     justify-content: center;
+        //     align-items: center;
+        //     background: url('../img/walking_with_dog.svg') center no-repeat;
+        //     background-size: contain;
+            
+        //     &--container {
+        //         width: 100%;
+        //     }
+        // }
+  }
+}
