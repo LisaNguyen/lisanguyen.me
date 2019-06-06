@@ -12,7 +12,7 @@ library.add(fab);
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
+    <SEO title="Lisa Nguyen" />
     <Home />
   </Layout>
 );

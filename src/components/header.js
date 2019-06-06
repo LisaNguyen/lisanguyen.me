@@ -1,6 +1,6 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
-import React from "react"
+import { Link } from "gatsby";
+import PropTypes from "prop-types";
+import React from "react";
 import logo from '../images/logo.svg';
 
 const Header = ({ siteTitle }) => (
@@ -9,10 +9,13 @@ const Header = ({ siteTitle }) => (
         <img src={logo} className="header__nav-logo" alt="Logo" />
         <ul className="header__nav-list">
           <li className="header__nav-list--item">
-            <a href="#about" target="_self">About</a>
+            <Link to="/">Home</Link>
           </li>
           <li className="header__nav-list--item">
-            <a href="#projects" target="_self">Projects</a>
+            <Link to="/about">About</Link>
+          </li>
+          <li className="header__nav-list--item">
+            <Link to="/projects">Projects</Link>
           </li>
         </ul>
       </nav>

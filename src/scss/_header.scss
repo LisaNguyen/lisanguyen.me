@@ -36,39 +36,4 @@
         }
     }
 }
-
-    @media (max-width: 900px) {
-    .header {
-        &__content {
-        flex-flow: row-reverse wrap;
-        }
-
-        &__text-container {
-            margin-top: 3.5em;
-            margin-bottom: 1.5em;
-            flex-basis: 100%;
-            order: 3;
-            text-align: center;
-        }
-
-        &__image-container {
-        width: 75%;
-        }
-
-        &__paragraph {
-        margin: 1.5em;
-        text-align: center;
-        }
-
-        &__icons {
-        justify-content: center;
-        width: 100%;
-        margin: 1.25em 0;
-        }
-
-        &__icon:not(:last-child) {
-        margin-right: 2em;
-        }
-    }
-    }
   
