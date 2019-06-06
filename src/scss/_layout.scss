@@ -1,0 +1,9 @@
+.layout {
+    &__container {
+        height: 100vh;
+    }
+
+    &__content {
+        height: calc(100% - 80px);
+    }
+}

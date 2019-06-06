@@ -1,0 +1,39 @@
+.home {
+    &__content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: $gutter;
+        margin: 0 auto;
+    }
+
+    &__text-container {
+        width: 60%;
+        padding: 0 1.5em;
+    }
+
+    &__paragraph {
+        text-align: justify;
+        margin-top: 0.75em;
+    }
+
+    &__image-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40%;
+
+        img {
+        width: 90%;
+        height: auto;
+        }
+    }
+
+    &__icons {
+        display: flex;
+        justify-content: space-between;
+        width: 33%;
+        margin: 1.25em 0;
+    }
+}

@@ -1,0 +1,21 @@
+$gutter: 80%;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #FAFAFA;
+  font-family: 'Roboto', sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  color: #373737;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  color: #373737;
+}
