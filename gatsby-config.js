@@ -42,6 +42,19 @@ module.exports = {
           },
         ],
       },
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: `UA-141766889-1`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-hotjar`,
+      options: {
+        id: `1356001`,
+        sv: `6`
+      },
     }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline

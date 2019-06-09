@@ -8,13 +8,13 @@
   }
 }
 
-@keyframes fadeIn {
+@keyframes fadeInBounce {
   0% {
     opacity: 0;
   }
 
   80% {
-    transform: scale(1.15);
+    transform: scale(1.1);
   }
 
   100% {

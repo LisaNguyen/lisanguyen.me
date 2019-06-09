@@ -34,6 +34,10 @@
       transition: transform .5s;
     }
 
+    &--item {
+      animation: fadeInBounce .5s ease-in .1s backwards;
+    }
+
     &--image:hover {
       transform: scale(1.1);
     }

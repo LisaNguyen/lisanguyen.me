@@ -11,7 +11,7 @@
     &__text-container {
       width: 50%;
       padding: 0 1.5em;
-      animation: fadeIn .7s ease-in .1s backwards;
+      animation: fadeInBounce .5s ease-in .1s backwards;
     }
 
     &__paragraph {
