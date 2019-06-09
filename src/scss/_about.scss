@@ -1,7 +1,7 @@
 .about {
     height: 100%;
-    width: 85%;
-    margin: 0 auto;
+    width: $secondaryGutter;
+    margin: 1em auto;
     padding: 2em;
     display: flex;
     justify-content: center;
@@ -11,20 +11,15 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      width: 60%;
+      width: 70%;
       height: 100%;
       line-height: 1.75em;
       font-size: 1.75em;
 
       &--header {
-        transform: all .2s;
         font-family: 'Merriweather', serif;
-        font-size: 2em;
-        font-weight: 700;
-        line-height: 1.25;
         text-transform: capitalize;
         text-align: center;
-        margin-bottom: 0.75em;
         animation: slideInFromRightText .5s ease-in .1s backwards;
         transform: scaleY(1.5);
       }
@@ -34,7 +29,7 @@
         text-align: justify;
         width: 80%;
         margin: 1em auto;
-        font-size: 1em;
+        font-size: 1.75rem;
         line-height: 1.5em;
       }
     }
@@ -61,12 +56,12 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      width: 50%;
+      width: 30%;
       height: 100%;
       animation: slideInFromLeft .5s ease-in .1s backwards;
 
       img {
-        width: 70%;
+        width: 100%;
         height: auto;
       }
     }
@@ -78,6 +73,10 @@
 
     &__image {
       margin-bottom: 4.5em;
+
+      img {
+        width: 80%;
+      }
     }
 
     &__content,

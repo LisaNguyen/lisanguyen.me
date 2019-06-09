@@ -1,0 +1,48 @@
+.projects {
+  width: $secondaryGutter;
+  margin: 3rem auto;
+  text-align: center;
+
+  &__quote {
+    font-size: 1.5em;
+  }
+
+  &__brief {
+    width: 80%;
+    margin: 1em auto;
+  }
+
+  &__headline {
+    font-family: 'Merriweather', serif;
+    transform: scaleY(1.25);
+  }
+
+  &__list {
+    margin-top: 3em;
+    display: grid;
+    grid-gap: 4em;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+
+    &--headline {
+        margin: 1em;
+    }
+
+    &--image {
+      width: 100%;
+      height: auto;
+      box-shadow: 2px 3px 10px 1px #969696;
+      transition: transform .5s;
+    }
+
+    &--image:hover {
+      transform: scale(1.1);
+    }
+
+    &--paragraph {
+      width: 90%;
+      margin: 0 auto;
+      margin-top: 1em;
+      text-align: left;
+    }
+  }
+}

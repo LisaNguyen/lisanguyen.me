@@ -14,7 +14,7 @@ const AboutPage = () => (
             </div>
             <div className="about__content">
                 <div className="about__content--container">
-                    <h2 className="secondary-title about__content--header">A short & sweet biography</h2>
+                    <h2 className="headline-2 about__content--header">A short & sweet biography</h2>
                     <div className="about__content--text">
                         <p className="paragraph about__content--paragraph">
                         Lisa is a frontend developer currently working for Verizon Media in somewhat sunnyside Dublin (that's a lie, we see the sun maybe twice a year if we're lucky).

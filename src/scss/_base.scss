@@ -4,10 +4,13 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 10px;
+}
+
 body {
   background-color: $snowWhite;
   font-family: 'Roboto', sans-serif;
-  font-size: 10px;
   font-weight: 400;
   color: $midnightBlack;
 }
