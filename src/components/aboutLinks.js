@@ -10,13 +10,13 @@ const AboutLinks = () => (
             <FontAwesomeIcon icon={faEnvelope} />
         </div>
         <div className="about__links--values">
-            <span>Check out my 
-                <a href="./LisaNguyenCV.pdf">
+            <span>Check out my
+                <a href="./LisaNguyenCV.pdf" target="_blank">
                     <strong> resume</strong>
                 </a>
             </span>
             <br />
-            <span>Reach me at 
+            <span>Reach me at
                 <a href="mailto: hello@lisanguyen.me">
                     <strong> hello@lisanguyen.me</strong>
                 </a>

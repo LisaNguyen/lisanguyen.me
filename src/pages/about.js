@@ -3,12 +3,15 @@ import React from 'react';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import AboutLinks from '../components/aboutLinks';
+import aboutImage from '../images/walking_with_dog.svg';
 
 const AboutPage = () => (
     <Layout>
         <SEO title="About" />
         <section className="about">
-            <div className="about__image"></div>
+            <div className="about__image">
+                <img src={aboutImage} alt="Walking Dog" />
+            </div>
             <div className="about__content">
                 <div className="about__content--container">
                     <h2 className="secondary-title about__content--header">A short & sweet biography</h2>

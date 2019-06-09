@@ -6,14 +6,14 @@
     padding: 2em;
     display: grid;
     grid-template-columns: 1fr 2fr;
-    align-items: center;    
+    align-items: center;
 
     &__content {
-      font-family: 'Merriweather', serif;
       line-height: 1.75em;
-      font-size: 1.5em;
+      font-size: 1.75em;
 
       &--header {
+        font-family: 'Merriweather', serif;
         font-size: 2em;
         text-transform: capitalize;
         text-align: center;
@@ -61,7 +61,7 @@
 
   &__image  {
     position: relative;
-      
+
     img {
       position: absolute;
       top: 50%;
@@ -79,13 +79,13 @@
             &--header {
                 font-size: 4.5em;
             }
-            
+
             &--paragraph {
                 width: 100%;
                 font-size: 1.1em;
             }
         }
-        
+
         &__links {
             width: 100%;
             margin: 0;
@@ -106,7 +106,7 @@
         //     align-items: center;
         //     background: url('../img/walking_with_dog.svg') center no-repeat;
         //     background-size: contain;
-            
+
         //     &--container {
         //         width: 100%;
         //     }

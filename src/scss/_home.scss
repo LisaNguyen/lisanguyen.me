@@ -9,11 +9,15 @@
     }
 
     &__text-container {
-        width: 60%;
-        padding: 0 1.5em;
+      width: 50%;
+      padding: 0 1.5em;
+      .headline-1 {
+          animation: fadeIn .7s ease-in .1s backwards;
+      }
     }
 
     &__paragraph {
+        animation: slideInLeft .5s ease-in .2s backwards;
         text-align: justify;
         margin-top: 0.75em;
     }
@@ -22,10 +26,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 40%;
+        width: 50%;
 
         img {
-        width: 90%;
+        width: 80%;
         height: auto;
         }
     }
@@ -36,6 +40,11 @@
         width: 33%;
         margin: 1.25em 0;
         margin-top: 1.5em;
+    }
+
+    &__icon svg:hover {
+      color: $cottonBlue;
+      animation: spinRight .3s ease-in;
     }
 }
 

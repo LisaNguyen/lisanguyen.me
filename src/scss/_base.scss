@@ -1,5 +1,3 @@
-$gutter: 80%;
-
 * {
   margin: 0;
   padding: 0;
@@ -7,15 +5,15 @@ $gutter: 80%;
 }
 
 body {
-  background-color: #FAFAFA;
+  background-color: $snowWhite;
   font-family: 'Roboto', sans-serif;
   font-size: 10px;
   font-weight: 400;
-  color: #373737;
+  color: $midnightBlack;
 }
 
 a:link,
 a:visited {
   text-decoration: none;
-  color: #373737;
+  color: $midnightBlack;
 }

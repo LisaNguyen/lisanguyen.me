@@ -6,7 +6,9 @@ import logo from '../images/logo.svg';
 const Header = ({ siteTitle }) => (
   <header className="header">
       <nav className="header__nav">
-        <img src={logo} className="header__nav-logo" alt="Logo" />
+        <Link to="/">
+          <img src={logo} className="header__nav-logo" alt="Logo" />
+        </Link>
         <ul className="header__nav-list">
           <li className="header__nav-list--item">
             <Link to="/">Home</Link>
