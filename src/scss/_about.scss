@@ -1,39 +1,36 @@
 .about {
-    position: relative;
     height: 100%;
     width: 85%;
     margin: 0 auto;
     padding: 2em;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
+    display: flex;
+    justify-content: center;
     align-items: center;
 
     &__content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 60%;
+      height: 100%;
       line-height: 1.75em;
       font-size: 1.75em;
 
       &--header {
+        transform: all .2s;
         font-family: 'Merriweather', serif;
         font-size: 2em;
+        font-weight: 700;
+        line-height: 1.25;
         text-transform: capitalize;
         text-align: center;
+        margin-bottom: 0.75em;
+        animation: slideInFromRightText .5s ease-in .1s backwards;
         transform: scaleY(1.5);
-        font-weight: 700;
-        margin-bottom: 0.5em;
-      }
-
-      &--container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        padding: 4em;
       }
 
       &--paragraph {
+        animation: slideInFromRight .5s ease-in .1s backwards;
         text-align: justify;
         width: 80%;
         margin: 1em auto;
@@ -42,74 +39,50 @@
       }
     }
 
-  &__links {
-    width: 80%;
-    display: grid;
-    grid-template-columns: 2em auto;
-    margin: 1.5em auto;
-    letter-spacing: 0.03em;
+    &__links {
+      animation: slideUp .5s .2s ease-in backwards;
+      width: 80%;
+      display: grid;
+      grid-template-columns: 2em auto;
+      margin: 1.5em auto;
+      letter-spacing: 0.03em;
 
-    i {
-      margin-right: .5em;
+      i {
+        margin-right: .5em;
+      }
+
+      a {
+        text-decoration: none;
+        color: #162434;
+      }
     }
 
-    a {
-      text-decoration: none;
-      color: #162434;
-    }
-  }
+    &__image  {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 50%;
+      height: 100%;
+      animation: slideInFromLeft .5s ease-in .1s backwards;
 
-  &__image  {
-    position: relative;
-
-    img {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 100%;
-      height: auto;
-    }
-  }
-}
-
-@media (max-width: 1280px) {
-    .personal {
-        &__about {
-            &--header {
-                font-size: 4.5em;
-            }
-
-            &--paragraph {
-                width: 100%;
-                font-size: 1.1em;
-            }
-        }
-
-        &__links {
-            width: 100%;
-            margin: 0;
-        }
+      img {
+        width: 70%;
+        height: auto;
+      }
     }
 }
 
 @media (max-width: 975px) {
-  .personal {
-        display: block;
-        &__image {
-            display: none;
-        }
+  .about {
+    display: block;
 
-        // &__about  {
-        //     display: flex;
-        //     justify-content: center;
-        //     align-items: center;
-        //     background: url('../img/walking_with_dog.svg') center no-repeat;
-        //     background-size: contain;
+    &__image {
+      margin-bottom: 4.5em;
+    }
 
-        //     &--container {
-        //         width: 100%;
-        //     }
-        // }
+    &__content,
+    &__image {
+      width: 100%;
+    }
   }
 }

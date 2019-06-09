@@ -11,7 +11,7 @@ import SEO from "../components/seo";
 library.add(fab);
 
 const IndexPage = () => (
-  <Layout>
+  <Layout activeLink="home">
     <SEO title="Lisa Nguyen" />
     <Home />
   </Layout>

@@ -4,7 +4,7 @@ import Layout from '../components/layout';
 import SEO from '../components/seo';
 
 const ProjectsPage = () => (
-    <Layout>
+    <Layout activeLink="projects">
         <SEO title="Projects" />
     </Layout>
 );

@@ -1,37 +1,42 @@
 import { Link } from "gatsby";
-import PropTypes from "prop-types";
-import React from "react";
+import React, { Component } from "react";
 import logo from '../images/logo.svg';
 
-const Header = ({ siteTitle }) => (
-  <header className="header">
-      <nav className="header__nav">
-        <Link to="/">
-          <img src={logo} className="header__nav-logo" alt="Logo" />
+const links = [
+  { name: 'home', path: '/'},
+  { name: 'about', path: '/about'},
+  { name: 'projects', path: '/projects'}
+];
+
+class Header extends Component {
+  addSelectedClass(linkName){
+    return this.props.activeLink === linkName ? 'selected' : '';
+  }
+
+  renderLinks() {
+    return links.map(({ name, path }) => (
+      <li className={`header__nav-list--item ${this.addSelectedClass(name)}`} key={name}>
+        <Link to={path}>
+          {name}
         </Link>
-        <ul className="header__nav-list">
-          <li className="header__nav-list--item">
-            <Link to="/">Home</Link>
-          </li>
-          <li className="header__nav-list--item">
-            <Link to="/about">About</Link>
-          </li>
-          <li className="header__nav-list--item">
-            <Link to="/projects">Projects</Link>
-          </li>
-        </ul>
-      </nav>
-    </header>
-);
+      </li>
+    ));
+  }
 
-
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
+  render() {
+    return (
+      <header className="header">
+        <nav className="header__nav">
+          <Link to="/">
+            <img src={logo} className="header__nav-logo" alt="Logo" />
+          </Link>
+          <ul className="header__nav-list">
+            {this.renderLinks()}
+          </ul>
+        </nav>
+      </header>
+    );
+  }
 }
 
 export default Header

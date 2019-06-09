@@ -6,7 +6,7 @@ import AboutLinks from '../components/aboutLinks';
 import aboutImage from '../images/walking_with_dog.svg';
 
 const AboutPage = () => (
-    <Layout>
+    <Layout activeLink="about">
         <SEO title="About" />
         <section className="about">
             <div className="about__image">

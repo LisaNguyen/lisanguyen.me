@@ -1,38 +1,43 @@
 .header {
-    &__nav {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        width: 85%;
-        margin: 0 auto;
-        padding: 2em 0;
-        font-family: 'Merriweather', serif;
+  &__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 85%;
+    margin: 0 auto;
+    padding: 2em 0;
+    font-family: 'Merriweather', serif;
 
 
-        &-logo {
-        width: 4em;
-        height: 4em;
-        }
-
-        &-list {
-        list-style: none;
-        font-size: 1.75em;
-        font-weight: 700;
-        text-transform: lowercase;
-
-        &--item {
-            margin-top: 0.3em;
-            display: inline-block;
-            border-bottom: 0.3em solid $snowWhite;
-        }
-
-        &--item:not(:last-child) {
-            margin-right: 1em;
-        }
-
-        &--item:hover {
-            border-bottom: 0.3em solid rgb(146, 90, 250);
-        }
-        }
+    &-logo {
+      width: 4em;
+      height: 4em;
     }
+
+    &-list {
+      list-style: none;
+      font-size: 1.75em;
+      font-weight: 700;
+      text-transform: lowercase;
+
+      &--item {
+        margin-top: 0.3em;
+        display: inline-block;
+        border-bottom: 0.3em solid $snowWhite;
+      }
+
+      &--item:not(:last-child) {
+        margin-right: 1em;
+      }
+
+      &--item:hover,
+      &--item:active {
+        border-bottom: 0.3em solid rgb(146, 90, 250);
+      }
+    }
+  }
+
+  .selected {
+    border-bottom: 0.3em solid rgb(146, 90, 250);
+  }
 }

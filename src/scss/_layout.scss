@@ -7,3 +7,15 @@
         height: calc(100% - 80px);
     }
 }
+
+@media (max-width: 975px) {
+  .layout {
+    &__container {
+      height: 100%;
+    }
+
+    &__content {
+      height: 100%;
+    }
+  }
+}

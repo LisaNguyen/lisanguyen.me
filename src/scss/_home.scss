@@ -11,13 +11,10 @@
     &__text-container {
       width: 50%;
       padding: 0 1.5em;
-      .headline-1 {
-          animation: fadeIn .7s ease-in .1s backwards;
-      }
+      animation: fadeIn .7s ease-in .1s backwards;
     }
 
     &__paragraph {
-        animation: slideInLeft .5s ease-in .2s backwards;
         text-align: justify;
         margin-top: 0.75em;
     }
@@ -48,7 +45,7 @@
     }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 975px) {
     .home {
         &__content {
             flex-flow: row-reverse wrap;
