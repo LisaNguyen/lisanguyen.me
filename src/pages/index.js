@@ -5,7 +5,6 @@ import { fab } from '@fortawesome/free-brands-svg-icons';
 
 import Layout from "../components/layout";
 import Home from "../components/home";
-import Image from "../components/image";
 import SEO from "../components/seo";
 
 library.add(fab);
