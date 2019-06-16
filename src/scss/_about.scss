@@ -85,3 +85,18 @@
     }
   }
 }
+
+@media (max-width: 750px) {
+  .about {
+    &__content {
+      &--text {
+        margin-top: 2.5em;
+      }
+
+      &--paragraph {
+        margin: 1em auto;
+        width: 90%;
+      }
+    }
+  }
+}

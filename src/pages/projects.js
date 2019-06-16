@@ -19,7 +19,7 @@ const projects = [
     image: <PortfolioImage />
   }, {
     name: 'Kanye-Ipsum',
-    description: 'Kanye-Ipsum is a lorem ipsum generator created during my journey to becoming a React.js developer. The design is inspired by his "Life of Pablo" album.',
+    description: 'Kanye-Ipsum is a lorem ipsum generator created as a small project while I first started learning React.js. The design is inspired by his "The Life of Pablo" album.',
     link: 'http://www.kanye-ipsum.com',
     image: <KanyeIpsumImage />
   }

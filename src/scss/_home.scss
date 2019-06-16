@@ -79,3 +79,12 @@
         }
     }
 }
+
+@media (max-width: 750px) {
+  .home {
+    &__paragraph {
+      margin: 0.5em;
+      text-align: left;
+    }
+  }
+}
