@@ -14,13 +14,13 @@ const Home = () => (
           </p>
           <div className="home__icons">
             <a className="home__icon" href="https://twitter.com/LisaNguyen505" target="_blank">
-              <FontAwesomeIcon icon={["fab", "twitter"]} size="3x"/>
+              <FontAwesomeIcon icon={['fab', 'twitter']} size="3x"/>
             </a>
             <a className="home__icon" href="https://ie.linkedin.com/in/lisa-nguyen-514725a5" target="_blank">
-              <FontAwesomeIcon icon={["fab", "linkedin"]} size="3x" />
+              <FontAwesomeIcon icon={['fab', 'linkedin']} size="3x" />
             </a>
             <a className="home__icon" href="https://github.com/LisaNguyen" target="_blank">
-              <FontAwesomeIcon icon={["fab", "github"]} size="3x" />
+              <FontAwesomeIcon icon={['fab', 'github']} size="3x" />
             </a>
           </div>
         </div>

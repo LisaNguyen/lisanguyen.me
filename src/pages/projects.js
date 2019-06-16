@@ -14,7 +14,7 @@ const projects = [
     image: <VoilaImage />
   }, {
     name: 'Portfolio',
-    description: 'My digital home on the world wide web. Previously, I created my website in plain HTML, CSS and JavaScript but my latest re-design allowed me to try out Gatsby.js',
+    description: 'My digital home on the world wide web to read about what I do for a living and the side projects I\'ve worked on. Implemented using Gatsby.js.',
     link: 'http://www.lisanguyen.me/',
     image: <PortfolioImage />
   }, {
